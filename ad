@@ -1,0 +1,60 @@
+[33mcommit f82cb348719a46fe9ab50a0cdce3b65ac14eb1d7[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Leandro <nogueiraleandro@estudante.ufscar.br>
+Date:   Tue Apr 9 11:39:04 2024 -0300
+
+    dando procedencia ao programa de analisador lexico
+
+[33mcommit 72df97d61fe7ac15100a01f93b3d7c4ad82b1f8f[m
+Author: KY-U <uscaio@estudante.ufscar>
+Date:   Tue Apr 9 11:30:34 2024 -0300
+
+    add: casos de teste
+
+[33mcommit db6a9508b41f717cbec3a5f84a41cb1386912bbd[m
+Author: KY-U <uscaio@estudante.ufscar>
+Date:   Tue Apr 9 11:23:38 2024 -0300
+
+    Armagedom-2
+
+[33mcommit 7f56f069f17278ddab8bf5be914dbc38068aed9a[m
+Merge: 01e2770 a8b5f3e
+Author: Leandro <nogueiraleandro@estudante.ufscar.br>
+Date:   Tue Apr 9 10:58:44 2024 -0300
+
+    Merge branch 'master' of https://github.com/KY-U/construcao-de-compiladores
+
+[33mcommit 01e2770ce60c1286d038d44a198e25dcbfbe7b66[m
+Author: Leandro <nogueiraleandro@estudante.ufscar.br>
+Date:   Tue Apr 9 10:56:25 2024 -0300
+
+    adicionando projeto inicial
+
+[33mcommit a8b5f3e915bfbc9688840cda31bb041d6552c228[m
+Author: KY-U <uscaio@estudante.ufscar>
+Date:   Tue Apr 9 10:13:05 2024 -0300
+
+    criacao da A1 'na mao'
+
+[33mcommit c3063f68b5b94df15c133d52057d51fee28d48f9[m
+Author: KY-U <uscaio@estudante.ufscar>
+Date:   Tue Apr 9 10:02:00 2024 -0300
+
+    Armagedom
+
+[33mcommit 82f00754770356be48f2708b6fe15564fc045638[m
+Author: KY-U <uscaio@estudante.ufscar>
+Date:   Tue Apr 9 09:14:10 2024 -0300
+
+    projeto criado
+
+[33mcommit b1186e4188d3223c2f71204f999f52dbbe4b2dce[m
+Author: KY-U <uscaio@estudante.ufscar>
+Date:   Tue Apr 9 08:35:34 2024 -0300
+
+    add: casos de teste
+
+[33mcommit f5c9d4b1d53b1441cedfad773a255c10efad0248[m
+Author: KY-U <uscaio@estudante.ufscar.br>
+Date:   Tue Apr 9 08:16:17 2024 -0300
+
+    Initial commit
