@@ -11,18 +11,17 @@
 <')',')'>
 <':',':'>
 <'inteiro','inteiro'>
-<'se',IDENT>
+<'se','se'>
 <'valor1',IDENT>
-<'<',OP_REL>
+<'<','<'>
 <'valor2',IDENT>
-<'entao',IDENT>
+<'entao','entao'>
 <'retorne',IDENT>
 <'valor1',IDENT>
-<'senao',IDENT>
+<'senao','senao'>
 <'retorne',IDENT>
 <'valor2',IDENT>
-<'fim',IDENT>
-<'se',IDENT>
+<'fim_se','fim_se'>
 <'fim',IDENT>
 <'funcao',IDENT>
 <'funcao',IDENT>
@@ -38,18 +37,17 @@
 <')',')'>
 <':',':'>
 <'real','real'>
-<'se',IDENT>
+<'se','se'>
 <'valor1',IDENT>
-<'<',OP_REL>
+<'<','<'>
 <'valor2',IDENT>
-<'entao',IDENT>
+<'entao','entao'>
 <'retorne',IDENT>
 <'valor1',IDENT>
-<'senao',IDENT>
+<'senao','senao'>
 <'retorne',IDENT>
 <'valor2',IDENT>
-<'fim',IDENT>
-<'se',IDENT>
+<'fim_se','fim_se'>
 <'fim',IDENT>
 <'funcao',IDENT>
 <'funcao',IDENT>
@@ -61,17 +59,16 @@
 <')',')'>
 <':',':'>
 <'real','real'>
-<'se',IDENT>
+<'se','se'>
 <'valor',IDENT>
-<'<',OP_REL>
+<'<','<'>
 <'0',NUM_INT>
-<'entao',IDENT>
+<'entao','entao'>
 <'valor',IDENT>
 <'<-','<-'>
 <'-','-'>
 <'valor',IDENT>
-<'fim',IDENT>
-<'se',IDENT>
+<'fim_se','fim_se'>
 <'retorne',IDENT>
 <'valor',IDENT>
 <'fim',IDENT>
@@ -102,7 +99,7 @@
 <'escreva','escreva'>
 <'(','('>
 <'"O menor inteiro entre, primeiroInt, "',CADEIA>
-<'e',IDENT>
+<'e','e'>
 <'", 
                 segundoInt, "',CADEIA>
 <'eh',IDENT>
@@ -129,7 +126,7 @@
 <'O',IDENT>
 <'valor',IDENT>
 <'", primeiroReal, "',CADEIA>
-<'nao',IDENT>
+<'nao','nao'>
 <'eh',IDENT>
 <'positivo',IDENT>
 <'")
@@ -138,19 +135,19 @@
       escreva("',CADEIA>
 <'Considerando',IDENT>
 <'-','-'>
-<'se',IDENT>
+<'se','se'>
 <'o',IDENT>
 <'modulo',IDENT>
 <',',','>
 <'tem',IDENT>
 <'-','-'>
-<'se',IDENT>
+<'se','se'>
 <'que',IDENT>
 <'o',IDENT>
 <'menor',IDENT>
 <'entre',IDENT>
 <'",
                 primeiroReal, "',CADEIA>
-<'e',IDENT>
+<'e','e'>
 <'", segundoReal, "',CADEIA>
 <'eh',IDENT>

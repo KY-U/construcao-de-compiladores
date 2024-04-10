@@ -6,13 +6,16 @@
 <'declare','declare'>
 <'ponteiro',IDENT>
 <':',':'>
+<'^','^'>
 <'inteiro','inteiro'>
 <'valor',IDENT>
 <'<-','<-'>
 <'100',NUM_INT>
 <'ponteiro',IDENT>
 <'<-','<-'>
+<'&','&'>
 <'valor',IDENT>
+<'^','^'>
 <'ponteiro',IDENT>
 <'<-','<-'>
 <'200',NUM_INT>

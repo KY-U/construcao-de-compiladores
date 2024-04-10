@@ -8,7 +8,7 @@
 <'celsius',IDENT>
 <'<-','<-'>
 <'0',NUM_INT>
-<'faca',IDENT>
+<'faca','faca'>
 <'fahrenheit',IDENT>
 <'<-','<-'>
 <'celsius',IDENT>
@@ -29,8 +29,8 @@
 <'celsius',IDENT>
 <'+','+'>
 <'0.5',NUM_REAL>
-<'ate',IDENT>
+<'ate','ate'>
 <'celsius',IDENT>
-<'>',OP_REL>
+<'>','>'>
 <'10',NUM_INT>
 <'fim_algoritmo','fim_algoritmo'>

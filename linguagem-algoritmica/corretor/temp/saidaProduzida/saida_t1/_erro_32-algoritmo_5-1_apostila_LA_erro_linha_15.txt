@@ -26,21 +26,20 @@
 <'(','('>
 <'media',IDENT>
 <')',')'>
-<'se',IDENT>
+<'se','se'>
 <'media',IDENT>
-<'>',OP_REL>
-<'=',OP_REL>
+<'>','>'>
+<'=','='>
 <'6',NUM_INT>
-<'entao',IDENT>
+<'entao','entao'>
 <'escreva','escreva'>
 <'(','('>
 <'"Aprovado :)..."',CADEIA>
 <')',')'>
-<'senao',IDENT>
+<'senao','senao'>
 <'escreva','escreva'>
 <'(','('>
 <'"Reprovado :(..."',CADEIA>
 <')',')'>
-<'fim',IDENT>
-<'se',IDENT>
+<'fim_se','fim_se'>
 <'fim_algoritmo','fim_algoritmo'>

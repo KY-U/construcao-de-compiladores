@@ -7,11 +7,11 @@
 <'(','('>
 <'nome',IDENT>
 <')',')'>
-<'enquanto',IDENT>
+<'enquanto','enquanto'>
 <'nome',IDENT>
-<'<>',OP_REL>
+<'<>','<>'>
 <'"fim"',CADEIA>
-<'faca',IDENT>
+<'faca','faca'>
 <'escreva','escreva'>
 <'(','('>
 <'"Ola,"',CADEIA>
@@ -24,8 +24,7 @@
 <'(','('>
 <'nome',IDENT>
 <')',')'>
-<'fim',IDENT>
-<'enquanto',IDENT>
+<'fim_enquanto','fim_enquanto'>
 <'escreva','escreva'>
 <'(','('>
 <'"Nao ha mais ninguem? Entao, tchau!"',CADEIA>

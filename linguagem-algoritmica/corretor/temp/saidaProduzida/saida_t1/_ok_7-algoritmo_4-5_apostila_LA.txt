@@ -22,7 +22,7 @@
 <'declare','declare'>
 <'colidiu',IDENT>
 <':',':'>
-<'logico',IDENT>
+<'logico','logico'>
 <'leia','leia'>
 <'(','('>
 <'angulo',IDENT>
@@ -124,11 +124,11 @@
 <'colidiu',IDENT>
 <'<-','<-'>
 <'alturaProjetil1',IDENT>
-<'<=',OP_REL>
+<'<=','<='>
 <'altura',IDENT>
-<'e',IDENT>
+<'e','e'>
 <'alturaProjetil2',IDENT>
-<'<=',OP_REL>
+<'<=','<='>
 <'altura',IDENT>
 <'escreva','escreva'>
 <'(','('>

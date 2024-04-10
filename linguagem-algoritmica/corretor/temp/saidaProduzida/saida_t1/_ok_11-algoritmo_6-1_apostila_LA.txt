@@ -7,13 +7,13 @@
 <'Fahrenheit',IDENT>
 <':',':'>
 <'real','real'>
-<'para',IDENT>
+<'para','para'>
 <'celsius',IDENT>
 <'<-','<-'>
 <'0',NUM_INT>
-<'ate',IDENT>
+<'ate','ate'>
 <'40',NUM_INT>
-<'faca',IDENT>
+<'faca','faca'>
 <'fahrenheit',IDENT>
 <'<-','<-'>
 <'celsius',IDENT>
@@ -29,6 +29,5 @@
 <',',','>
 <'fahrenheit',IDENT>
 <')',')'>
-<'fim',IDENT>
-<'para',IDENT>
+<'fim_para','fim_para'>
 <'fim_algoritmo','fim_algoritmo'>

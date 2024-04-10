@@ -19,13 +19,13 @@
 <'(','('>
 <'numeroAlunos',IDENT>
 <')',')'>
-<'para',IDENT>
+<'para','para'>
 <'i',IDENT>
 <'<-','<-'>
 <'1',NUM_INT>
-<'ate',IDENT>
+<'ate','ate'>
 <'numeroAlunos',IDENT>
-<'faca',IDENT>
+<'faca','faca'>
 <'leia','leia'>
 <'(','('>
 <'prova1',IDENT>
@@ -49,6 +49,5 @@
 <'(','('>
 <'media',IDENT>
 <')',')'>
-<'fim',IDENT>
-<'para',IDENT>
+<'fim_para','fim_para'>
 <'fim_algoritmo','fim_algoritmo'>

@@ -7,9 +7,9 @@
 <'(','('>
 <'idade',IDENT>
 <')',')'>
-<'caso',IDENT>
+<'caso','caso'>
 <'idade',IDENT>
-<'seja',IDENT>
+<'seja','seja'>
 <'0',NUM_INT>
 <':',':'>
 <'escreva','escreva'>
@@ -17,6 +17,7 @@
 <'"bebe"',CADEIA>
 <')',')'>
 <'1',NUM_INT>
+<'..','..'>
 <'10',NUM_INT>
 <':',':'>
 <'escreva','escreva'>
@@ -24,6 +25,7 @@
 <'"crianca"',CADEIA>
 <')',')'>
 <'11',NUM_INT>
+<'..','..'>
 <'14',NUM_INT>
 <':',':'>
 <'escreva','escreva'>
@@ -31,6 +33,7 @@
 <'"pre-adolescente"',CADEIA>
 <')',')'>
 <'15',NUM_INT>
+<'..','..'>
 <'18',NUM_INT>
 <':',':'>
 <'escreva','escreva'>
@@ -38,17 +41,17 @@
 <'"adolescente"',CADEIA>
 <')',')'>
 <'19',NUM_INT>
+<'..','..'>
 <'120',NUM_INT>
 <':',':'>
 <'escreva','escreva'>
 <'(','('>
 <'"adulto"',CADEIA>
 <')',')'>
-<'senao',IDENT>
+<'senao','senao'>
 <'escreva','escreva'>
 <'(','('>
 <'"Idade invalida ou sem classificacao definida"',CADEIA>
 <')',')'>
-<'fim',IDENT>
-<'caso',IDENT>
+<'fim_caso','fim_caso'>
 <'fim_algoritmo','fim_algoritmo'>
