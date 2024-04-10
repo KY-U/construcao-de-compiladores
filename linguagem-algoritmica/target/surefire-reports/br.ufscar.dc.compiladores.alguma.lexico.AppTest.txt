@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.ufscar.dc.compiladores.alguma.lexico.AppTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in br.ufscar.dc.compiladores.alguma.lexico.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.058 s - in br.ufscar.dc.compiladores.alguma.lexico.AppTest

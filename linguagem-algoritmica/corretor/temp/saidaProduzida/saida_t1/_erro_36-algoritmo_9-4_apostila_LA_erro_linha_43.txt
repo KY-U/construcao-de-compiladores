@@ -1,0 +1,156 @@
+<'funcao',IDENT>
+<'menorInteiro',IDENT>
+<'(','('>
+<'valor1',IDENT>
+<':',':'>
+<'inteiro','inteiro'>
+<',',','>
+<'valor2',IDENT>
+<':',':'>
+<'inteiro','inteiro'>
+<')',')'>
+<':',':'>
+<'inteiro','inteiro'>
+<'se',IDENT>
+<'valor1',IDENT>
+<'<',OP_REL>
+<'valor2',IDENT>
+<'entao',IDENT>
+<'retorne',IDENT>
+<'valor1',IDENT>
+<'senao',IDENT>
+<'retorne',IDENT>
+<'valor2',IDENT>
+<'fim',IDENT>
+<'se',IDENT>
+<'fim',IDENT>
+<'funcao',IDENT>
+<'funcao',IDENT>
+<'menorReal',IDENT>
+<'(','('>
+<'valor1',IDENT>
+<':',':'>
+<'real','real'>
+<',',','>
+<'valor2',IDENT>
+<':',':'>
+<'real','real'>
+<')',')'>
+<':',':'>
+<'real','real'>
+<'se',IDENT>
+<'valor1',IDENT>
+<'<',OP_REL>
+<'valor2',IDENT>
+<'entao',IDENT>
+<'retorne',IDENT>
+<'valor1',IDENT>
+<'senao',IDENT>
+<'retorne',IDENT>
+<'valor2',IDENT>
+<'fim',IDENT>
+<'se',IDENT>
+<'fim',IDENT>
+<'funcao',IDENT>
+<'funcao',IDENT>
+<'modulo',IDENT>
+<'(','('>
+<'valor',IDENT>
+<':',':'>
+<'real','real'>
+<')',')'>
+<':',':'>
+<'real','real'>
+<'se',IDENT>
+<'valor',IDENT>
+<'<',OP_REL>
+<'0',NUM_INT>
+<'entao',IDENT>
+<'valor',IDENT>
+<'<-','<-'>
+<'-','-'>
+<'valor',IDENT>
+<'fim',IDENT>
+<'se',IDENT>
+<'retorne',IDENT>
+<'valor',IDENT>
+<'fim',IDENT>
+<'funcao',IDENT>
+<'algoritmo','algoritmo'>
+<'declare','declare'>
+<'primeiroInt',IDENT>
+<',',','>
+<'segundoInt',IDENT>
+<':',':'>
+<'inteiro','inteiro'>
+<'declare','declare'>
+<'primeiroReal',IDENT>
+<',',','>
+<'segundoReal',IDENT>
+<':',':'>
+<'real','real'>
+<'leia','leia'>
+<'(','('>
+<'primeiroInt',IDENT>
+<',',','>
+<'segundoInt',IDENT>
+<',',','>
+<'primeiroReal',IDENT>
+<',',','>
+<'segundoReal',IDENT>
+<')',')'>
+<'escreva','escreva'>
+<'(','('>
+<'"O menor inteiro entre, primeiroInt, "',CADEIA>
+<'e',IDENT>
+<'", 
+                segundoInt, "',CADEIA>
+<'eh',IDENT>
+<'", menor(primeiroInt, segundoInt))
+
+      se menorReal(primeiroReal, segundoReal) <> primeiroReal entao
+           escreva(segundoReal, "',CADEIA>
+<'eh',IDENT>
+<'menor',IDENT>
+<'que',IDENT>
+<'", primeiroReal)
+      fim_se
+
+      se modulo(primeiroReal) = primeiroReal e primeiroReal <> 0 entao
+           escreva("',CADEIA>
+<'O',IDENT>
+<'valor',IDENT>
+<'", primeiroReal, "',CADEIA>
+<'eh',IDENT>
+<'positivo',IDENT>
+<'")
+      senao
+           escreva("',CADEIA>
+<'O',IDENT>
+<'valor',IDENT>
+<'", primeiroReal, "',CADEIA>
+<'nao',IDENT>
+<'eh',IDENT>
+<'positivo',IDENT>
+<'")
+      fim_se
+
+      escreva("',CADEIA>
+<'Considerando',IDENT>
+<'-','-'>
+<'se',IDENT>
+<'o',IDENT>
+<'modulo',IDENT>
+<',',','>
+<'tem',IDENT>
+<'-','-'>
+<'se',IDENT>
+<'que',IDENT>
+<'o',IDENT>
+<'menor',IDENT>
+<'entre',IDENT>
+<'",
+                primeiroReal, "',CADEIA>
+<'e',IDENT>
+<'", segundoReal, "',CADEIA>
+<'eh',IDENT>

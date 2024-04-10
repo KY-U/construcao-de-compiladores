@@ -1,0 +1,33 @@
+<'algoritmo','algoritmo'>
+<'declare','declare'>
+<'nome',IDENT>
+<':',':'>
+<'literal','literal'>
+<'leia','leia'>
+<'(','('>
+<'nome',IDENT>
+<')',')'>
+<'enquanto',IDENT>
+<'nome',IDENT>
+<'<>',OP_REL>
+<'"fim"',CADEIA>
+<'faca',IDENT>
+<'escreva','escreva'>
+<'(','('>
+<'"Ola,"',CADEIA>
+<',',','>
+<'nome',IDENT>
+<',',','>
+<'", como vai?"',CADEIA>
+<')',')'>
+<'leia','leia'>
+<'(','('>
+<'nome',IDENT>
+<')',')'>
+<'fim',IDENT>
+<'enquanto',IDENT>
+<'escreva','escreva'>
+<'(','('>
+<'"Nao ha mais ninguem? Entao, tchau!"',CADEIA>
+<')',')'>
+<'fim_algoritmo','fim_algoritmo'>

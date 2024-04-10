@@ -10,6 +10,7 @@ public class Principal {
 
     public static void main(String[] args) {
         String arquivoSaida = args[1];
+        String palavra;
 
         try(PrintWriter pw = new PrintWriter(arquivoSaida)) {
             // args[0] é o primeiro argumento da linha de comando
@@ -18,7 +19,12 @@ public class Principal {
 
             Token t = null;
             while ((t = lex.nextToken()).getType() != Token.EOF) {
-                pw.println("<" + LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType()) + "," + t.getText() + ">");
+                palavra = LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType());
+                if(palavra.equals("COMENTARIO")){
+
+                } else {
+                    pw.println("<'" + t.getText() + "'," + LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType()) + ">");
+                }
             }
         } catch (IOException ex) {
             ex.printStackTrace();
