@@ -148,3 +148,4 @@
 <'e','e'>
 <'", segundoReal, "',CADEIA>
 <'eh',IDENT>
+Linha 57: cadeia literal nao fechada

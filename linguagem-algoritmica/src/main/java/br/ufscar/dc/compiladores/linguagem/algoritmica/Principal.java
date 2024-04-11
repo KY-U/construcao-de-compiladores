@@ -22,7 +22,20 @@ public class Principal {
                 palavra = LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType());
                 if(palavra.equals("COMENTARIO")){
 
-                } else {
+                }
+                else if(palavra.equals("SIMB_N_IDENT")){
+                    pw.println("Linha " + t.getLine() + ": " + t.getText() + " - simbolo nao identificado");
+                    break;
+                }
+                else if(palavra.equals("CADEIA_N_FECHADA")){
+                    pw.println("Linha " + t.getLine() + ": cadeia literal nao fechada");
+                    break;
+                }
+                else if(palavra.equals("COMENTARIO_N_FECHADO")){
+                    pw.println("Linha " + t.getLine() + ": comentario nao fechado");
+                    break;
+                }
+                else {
                     pw.println("<'" + t.getText() + "'," + LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType()) + ">");
                 }
             }

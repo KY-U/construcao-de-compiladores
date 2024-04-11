@@ -58,9 +58,12 @@ VAR : 'var';
 CONST : 'constante';
 VERDADEIRO : 'verdadeiro';
 FALSO : 'falso';
+SIMB_N_IDENT : '}' | '$' | '~';
+CADEIA_N_FECHADA : '"' ~('\n'|'"')*;
+COMENTARIO_N_FECHADO : '{' ~'}'*;
 
 	 
-IDENT : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9')*
+IDENT : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
 	;
 fragment
 ESC_SEQ	: '\\\'';

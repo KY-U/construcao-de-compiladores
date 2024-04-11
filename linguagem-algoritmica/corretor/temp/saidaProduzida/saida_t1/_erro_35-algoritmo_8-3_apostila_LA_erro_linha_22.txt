@@ -73,3 +73,4 @@
 <'foi',IDENT>
 <'apresentado',IDENT>
 <'.','.'>
+Linha 26: cadeia literal nao fechada
