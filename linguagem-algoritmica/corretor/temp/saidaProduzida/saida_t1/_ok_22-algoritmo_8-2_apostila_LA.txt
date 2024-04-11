@@ -40,10 +40,16 @@
 <'leia','leia'>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'x',IDENT>
 <',',','>
 <'ponto',IDENT>
+<'.','.'>
+<'y',IDENT>
 <',',','>
 <'ponto',IDENT>
+<'.','.'>
+<'z',IDENT>
 <')',')'>
 <'pontoMaisProximo',IDENT>
 <'<-','<-'>
@@ -55,6 +61,8 @@
 <'pot',IDENT>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'x',IDENT>
 <',',','>
 <'2',NUM_INT>
 <')',')'>
@@ -62,6 +70,8 @@
 <'pot',IDENT>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'y',IDENT>
 <',',','>
 <'2',NUM_INT>
 <')',')'>
@@ -69,6 +79,8 @@
 <'pot',IDENT>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'z',IDENT>
 <',',','>
 <'2',NUM_INT>
 <')',')'>
@@ -83,10 +95,16 @@
 <'leia','leia'>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'x',IDENT>
 <',',','>
 <'ponto',IDENT>
+<'.','.'>
+<'y',IDENT>
 <',',','>
 <'ponto',IDENT>
+<'.','.'>
+<'z',IDENT>
 <')',')'>
 <'distancia',IDENT>
 <'<-','<-'>
@@ -95,6 +113,8 @@
 <'pot',IDENT>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'x',IDENT>
 <',',','>
 <'2',NUM_INT>
 <')',')'>
@@ -102,6 +122,8 @@
 <'pot',IDENT>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'y',IDENT>
 <',',','>
 <'2',NUM_INT>
 <')',')'>
@@ -109,6 +131,8 @@
 <'pot',IDENT>
 <'(','('>
 <'ponto',IDENT>
+<'.','.'>
+<'z',IDENT>
 <',',','>
 <'2',NUM_INT>
 <')',')'>
@@ -131,10 +155,16 @@
 <'"Ponto mais proximo:"',CADEIA>
 <',',','>
 <'pontoMaisProximo',IDENT>
+<'.','.'>
+<'x',IDENT>
 <',',','>
 <'pontoMaisProximo',IDENT>
+<'.','.'>
+<'y',IDENT>
 <',',','>
 <'pontoMaisProximo',IDENT>
+<'.','.'>
+<'z',IDENT>
 <')',')'>
 <'fim_se','fim_se'>
 <'fim_algoritmo','fim_algoritmo'>

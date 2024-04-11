@@ -23,7 +23,7 @@ COMERCIAL : '&';
 ELEVADO : '^';
 REGISTRO : 'registro';
 FIM_REGISTRO : 'fim_registro';
-
+PONTO : '.';
 IGUAL : '=';
 DIFERENTE : '<>';
 MAIOR : '>';
@@ -48,7 +48,17 @@ FACA : 'faca';
 FIM_PARA : 'fim_para';
 ENQUANTO : 'enquanto';
 FIM_ENQUANTO : 'fim_enquanto';
- 
+PROCEDIMENTO : 'procedimento';
+FIM_PROCEDIMENTO: 'fim_procedimento';
+FUNCAO : 'funcao';
+RETORNE : 'retorne';
+FIM_FUNCAO : 'fim_funcao';
+TIPO : 'tipo';
+VAR : 'var';
+CONST : 'constante';
+VERDADEIRO : 'verdadeiro';
+FALSO : 'falso';
+
 	 
 IDENT : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9')*
 	;
@@ -62,5 +72,7 @@ WS  :   ( ' '
     ;
 
 DELIM	:	':';
+ABRECOL :   '[';
+FECHACOL:   ']';
 ABREPAR :	'(';
 FECHAPAR:	')';

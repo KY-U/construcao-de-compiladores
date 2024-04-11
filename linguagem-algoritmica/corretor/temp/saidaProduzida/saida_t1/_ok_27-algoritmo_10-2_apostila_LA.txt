@@ -1,5 +1,5 @@
 <'algoritmo','algoritmo'>
-<'constante',IDENT>
+<'constante','constante'>
 <'numeroAlunos',IDENT>
 <':',':'>
 <'inteiro','inteiro'>
@@ -21,12 +21,16 @@
 <'real','real'>
 <'declare','declare'>
 <'nomeAluno',IDENT>
+<'[','['>
 <'numeroAlunos',IDENT>
+<']',']'>
 <':',':'>
 <'literal','literal'>
 <'declare','declare'>
 <'media',IDENT>
+<'[','['>
 <'numeroAlunos',IDENT>
+<']',']'>
 <':',':'>
 <'real','real'>
 <'melhorMedia',IDENT>
@@ -45,7 +49,9 @@
 <'leia','leia'>
 <'(','('>
 <'nomeAluno',IDENT>
+<'[','['>
 <'i',IDENT>
+<']',']'>
 <',',','>
 <'notaProva1',IDENT>
 <',',','>
@@ -54,7 +60,9 @@
 <'notaProva3',IDENT>
 <')',')'>
 <'media',IDENT>
+<'[','['>
 <'i',IDENT>
+<']',']'>
 <'<-','<-'>
 <'(','('>
 <'notaProva1',IDENT>
@@ -67,14 +75,18 @@
 <'3',NUM_INT>
 <'se','se'>
 <'media',IDENT>
+<'[','['>
 <'i',IDENT>
+<']',']'>
 <'>','>'>
 <'melhorMedia',IDENT>
 <'entao','entao'>
 <'melhorMedia',IDENT>
 <'<-','<-'>
 <'media',IDENT>
+<'[','['>
 <'i',IDENT>
+<']',']'>
 <'fim_se','fim_se'>
 <'fim_para','fim_para'>
 <'escreva','escreva'>
@@ -94,7 +106,9 @@
 <'faca','faca'>
 <'se','se'>
 <'media',IDENT>
+<'[','['>
 <'i',IDENT>
+<']',']'>
 <'=','='>
 <'melhorMedia',IDENT>
 <'entao','entao'>
@@ -103,7 +117,9 @@
 <'"Nome do aluno:"',CADEIA>
 <',',','>
 <'nomeAluno',IDENT>
+<'[','['>
 <'i',IDENT>
+<']',']'>
 <')',')'>
 <'fim_se','fim_se'>
 <'fim_para','fim_para'>
