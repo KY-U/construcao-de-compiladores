@@ -81,12 +81,15 @@ fim_algoritmo
 Linha 5: ~ - simbolo nao identificado
 ```
 
-## Dependências:
+### Dependências:
 Java Framework:
 
     Junit
         Versão: 4.11.1
-- ANTLR(antlr4) 4.11.1
+Parser generator for reading, processing, executing, or translating structured text or binary files:
+
+    ANTLR(antlr4) 
+        Versão4.11.1
 
 Plugins Maven:
 
@@ -123,4 +126,20 @@ Gerenciamento de Plugins:
 
     maven-project-info-reports-plugin
         Versão: 3.0.0
-## Como rodar:
+### Buildar:
+```
+mvn package
+```
+### Executar:
+```
+java -jar <path-até-repositório>/T1/linguagem-algoritmica/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar <path-até-linguagem-algoritmica>/teste.txt
+```
+### Executar com casos de teste:
+Verificar Java 11.0.2 com:
+```
+java -version
+``` 
+Executar substituindo os devidos path:
+```
+java -jar <path-ate-repositorio>/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar <path-até-linguagem-algoritmica>/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc <path-até-repositório>/T1/linguagem-algoritmica/corretor/temp/saidaProduzida/saida_t1 <path-ate-repositorio>/T1/casos-de-teste/casos-de-teste "802215, RA-PEDRO, RA-LEALDINI" lexico
+```
