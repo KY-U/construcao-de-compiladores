@@ -141,5 +141,5 @@ java -version
 ``` 
 Executar substituindo os devidos path:
 ```
-java -jar <path-ate-repositorio>/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar <path-até-linguagem-algoritmica>/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc <path-até-repositório>/T1/linguagem-algoritmica/corretor/temp/saidaProduzida/saida_t1 <path-ate-repositorio>/T1/casos-de-teste/casos-de-teste "802215, RA-PEDRO, RA-LEALDINI" lexico
+java -jar <path-ate-repositorio>/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar <path-até-linguagem-algoritmica>/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc <path-até-repositório>/T1/linguagem-algoritmica/corretor/temp/saidaProduzida/saida_t1 <path-ate-repositorio>/T1/casos-de-teste/casos-de-teste "802215, RA-PEDRO, 790894" lexico
 ```
