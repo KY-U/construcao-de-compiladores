@@ -132,7 +132,7 @@ mvn package
 ```
 ### Executar:
 ```
-java -jar <path-até-repositório>/T1/linguagem-algoritmica/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar <path-até-linguagem-algoritmica>/teste.txt
+java -jar <path-até-repositório>/T1/linguagem-algoritmica/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar <path-até-linguagem-algoritmica>/entrada.txt <path-até-linguagem-algoritmica>/saida.txt
 ```
 ### Executar com casos de teste:
 Verificar Java 11.0.2 com:
@@ -141,5 +141,5 @@ java -version
 ``` 
 Executar substituindo os devidos path:
 ```
-java -jar <path-ate-repositorio>/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar <path-até-linguagem-algoritmica>/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc <path-até-repositório>/T1/linguagem-algoritmica/corretor/temp/saidaProduzida/saida_t1 <path-ate-repositorio>/T1/casos-de-teste/casos-de-teste "802215, RA-PEDRO, 790894" lexico
+java -jar <path-ate-repositorio>/compiladores-corretor-automatico-1.0-SNAPSHOT-jar-with-dependencies.jar "java -jar <path-até-linguagem-algoritmica>/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar" gcc <path-até-repositório>/T1/linguagem-algoritmica/corretor/temp/saidaProduzida/saida_t1 <path-ate-repositorio>/T1/casos-de-teste/casos-de-teste "802215, RA-PEDRO, 790894" t1
 ```
