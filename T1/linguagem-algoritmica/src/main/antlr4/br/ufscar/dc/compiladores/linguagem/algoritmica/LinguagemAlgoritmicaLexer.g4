@@ -1,6 +1,6 @@
 lexer grammar LinguagemAlgoritmicaLexer;
 
-COMENTARIO: '{' ~'}'* '}';
+COMENTARIO :   '{' ~('\n'|'\r')* '}' {skip();};
 REAL: 'real';
 ALGORITMO : 'algoritmo';
 DECLARE : 'declare';

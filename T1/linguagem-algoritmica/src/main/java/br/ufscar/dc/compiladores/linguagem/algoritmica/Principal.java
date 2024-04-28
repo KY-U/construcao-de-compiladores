@@ -20,10 +20,7 @@ public class Principal {
             //while para analisar caracter por caracter do arquivo de entrada
             while ((t = lex.nextToken()).getType() != Token.EOF) {
                 palavra = LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType());
-                if(palavra.equals("COMENTARIO")){
-                    //caso o token seja um comentário, ignorar
-                }
-                else if(palavra.equals("SIMB_N_IDENT")){ //caso o token seja um simbolo não identificado, printar linha do erro
+                if(palavra.equals("SIMB_N_IDENT")){ //caso o token seja um simbolo não identificado, printar linha do erro
                     pw.println("Linha " + t.getLine() + ": " + t.getText() + " - simbolo nao identificado");
                     break;
                 }
