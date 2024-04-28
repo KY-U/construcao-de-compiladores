@@ -26,10 +26,10 @@ FIM_REGISTRO : 'fim_registro';
 PONTO : '.';
 IGUAL : '=';
 DIFERENTE : '<>';
-MAIOR : '>';
-MENOR : '<';
 MAIOR_IGUAL : '>=';
 MENOR_IGUAL : '<=';
+MAIOR : '>';
+MENOR : '<';
 E : 'e';
 NAO : 'nao';
 OU : 'ou';
@@ -59,7 +59,7 @@ CONST : 'constante';
 VERDADEIRO : 'verdadeiro';
 FALSO : 'falso';
 SIMB_N_IDENT : '}' | '$' | '~';
-CADEIA_N_FECHADA : '"' ~('\n'|'"')*;
+CADEIA_N_FECHADA : '"' (~["\n])* '"';
 COMENTARIO_N_FECHADO : '{' ~'}'*;
 
 IDENT : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
@@ -79,7 +79,7 @@ FECHACOL:   ']';
 ABREPAR :	'(';
 FECHAPAR:	')';
 
-programa : declaracoes ALGORITMO corpo FIM_ALGORITMO;
+programa : declaracoes ALGORITMO corpo FIM_ALGORITMO EOF;
 declaracoes : (decl_local_global)*;
 decl_local_global : declaracao_local | declaracao_global;
 
@@ -88,7 +88,7 @@ declaracao_local : DECLARE variavel
                  | TIPO IDENT DELIM tipo
                  ;
 
-variavel : identificador (VIRGULA identificador)* IGUAL tipo;
+variavel : identificador (VIRGULA identificador)* DELIM tipo;
 identificador : IDENT (PONTO IDENT)* dimensao;
 dimensao : (ABRECOL exp_aritmetica FECHACOL)*;
 tipo : registro | tipo_estendido;
@@ -98,9 +98,9 @@ tipo_estendido : (ELEVADO)? tipo_basico_ident;
 valor_constante : CADEIA | NUM_INT | NUM_REAL | VERDADEIRO | FALSO;
 registro : REGISTRO (variavel)* FIM_REGISTRO;
 declaracao_global : PROCEDIMENTO IDENT ABREPAR (parametros)? FECHAPAR (declaracao_local)* (cmd)* FIM_PROCEDIMENTO
-                  | FUNCAO IDENT ABREPAR (parametros)? FECHAPAR IGUAL tipo_estendido (declaracao_local)* (cmd)* FIM_FUNCAO
+                  | FUNCAO IDENT ABREPAR (parametros)? FECHAPAR DELIM tipo_estendido (declaracao_local)* (cmd)* FIM_FUNCAO
                   ;
-parametro : (VAR)? identificador (VIRGULA identificador)* IGUAL tipo_estendido;
+parametro : (VAR)? identificador (VIRGULA identificador)* DELIM tipo_estendido;
 parametros : parametro (VIRGULA parametro)*;
 corpo : (declaracao_local)* (cmd)*;
 cmd : cmdLeia | cmdEscreva | cmdSe | cmdCaso | cmdPara | cmdEnquanto | cmdFaca | cmdAtribuicao | cmdChamada | cmdRetorne;
@@ -115,7 +115,7 @@ cmdAtribuicao : (ELEVADO)? identificador ATRIB expressao;
 cmdChamada : IDENT ABREPAR expressao (VIRGULA expressao)* FECHAPAR;
 cmdRetorne : RETORNE expressao;
 selecao : (item_selecao)*;
-item_selecao : constantes IGUAL (cmd)*;
+item_selecao : constantes DELIM (cmd)*;
 constantes : numero_intervalo (VIRGULA numero_intervalo)*;
 numero_intervalo : (op_unario)? NUM_INT (DOIS_PONTOS (op_unario)? NUM_INT)?;
 op_unario : MENOS;

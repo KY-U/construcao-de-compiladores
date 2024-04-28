@@ -1,0 +1,4 @@
+Linha 8: erro sintatico proximo a <
+Fim da compilacao
+Linha 11: erro sintatico proximo a fim_para
+Fim da compilacao

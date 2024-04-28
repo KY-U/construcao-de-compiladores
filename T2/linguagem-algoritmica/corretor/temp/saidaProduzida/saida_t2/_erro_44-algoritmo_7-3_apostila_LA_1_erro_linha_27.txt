@@ -1,0 +1,4 @@
+Linha 27: erro sintatico proximo a <
+Fim da compilacao
+Linha 27: erro sintatico proximo a -
+Fim da compilacao

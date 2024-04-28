@@ -1,0 +1,4 @@
+Linha 3: erro sintatico proximo a (
+Fim da compilacao
+Linha 3: erro sintatico proximo a :
+Fim da compilacao

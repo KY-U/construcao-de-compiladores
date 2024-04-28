@@ -1,0 +1,4 @@
+Linha 15: erro sintatico proximo a 19.120
+Fim da compilacao
+Linha 16: erro sintatico proximo a senao
+Fim da compilacao
