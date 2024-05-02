@@ -14,28 +14,35 @@ public class MeuErrorListener implements ANTLRErrorListener {
     public MeuErrorListener(PrintWriter pw){
         this.pw = pw;
     }
-
     @Override
     public void	reportAmbiguity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, boolean exact, BitSet ambigAlts, ATNConfigSet configs) {
         // Não será necessário para o T2, pode deixar vazio
     }
-    
     @Override
     public void reportAttemptingFullContext(Parser recognizer, DFA dfa, int startIndex, int stopIndex, BitSet conflictingAlts, ATNConfigSet configs) {
         // Não será necessário para o T2, pode deixar vazio
     }
-
     @Override
     public void reportContextSensitivity(Parser recognizer, DFA dfa, int startIndex, int stopIndex, int prediction, ATNConfigSet configs) {
         // Não será necessário para o T2, pode deixar vazio
     }
-
     @Override
     public void	syntaxError(Recognizer<?,?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e) {
         // Aqui vamos colocar o tratamento de erro customizado
 
         Token t = (Token) offendingSymbol;
 
-        pw.println("Linha "+ line +": erro sintatico proximo a "+t.getText()+"\nFim da compilacao");
+        if (t.getText().equals("<EOF>")) {
+            pw.println("Linha "+ line +": erro sintatico proximo a EOF\nFim da compilacao");
+            pw.close();
+        }
+        else if (LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType()).equals("ERRO")) {
+            pw.println("Linha "+ line +": " + t.getText() + " - simbolo nao identificado\nFim da compilacao");
+            pw.close();
+        }
+        else {
+            pw.println("Linha "+ line +": erro sintatico proximo a "+t.getText()+"\nFim da compilacao");
+            pw.close();
+        }
     }
 }

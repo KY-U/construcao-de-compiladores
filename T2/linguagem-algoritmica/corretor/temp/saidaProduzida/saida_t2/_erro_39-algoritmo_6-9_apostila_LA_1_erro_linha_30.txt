@@ -1,2 +1,0 @@
-Linha 30: erro sintatico proximo a 0
-Fim da compilacao

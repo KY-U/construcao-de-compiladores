@@ -1,4 +1,0 @@
-Linha 11: erro sintatico proximo a )
-Fim da compilacao
-Linha 14: erro sintatico proximo a <-
-Fim da compilacao

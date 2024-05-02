@@ -58,8 +58,9 @@ VAR : 'var';
 CONST : 'constante';
 VERDADEIRO : 'verdadeiro';
 FALSO : 'falso';
+
+CADEIA_NAO_FECHADA: '"' (ESC_SEQ | ~('\n'|'"'|'\\'))* '\n';
 SIMB_N_IDENT : '}' | '$' | '~';
-CADEIA_N_FECHADA : '"' (~["\n"] | '\n')*;
 COMENTARIO_N_FECHADO : '{' ~'}'*;
 
 IDENT : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
@@ -78,3 +79,6 @@ ABRECOL :   '[';
 FECHACOL:   ']';
 ABREPAR :	'(';
 FECHAPAR:	')';
+
+
+ERRO: .;

@@ -9,7 +9,7 @@ INTEIRO : 'inteiro';
 LEIA : 'leia';
 ESCREVA : 'escreva';
 FIM_ALGORITMO : 'fim_algoritmo';
-CADEIA : '"' ~('"')* '"';
+CADEIA : '"' ( ~["\r\n] | '""' )* '"';
 VIRGULA : ',';
 NUM_INT	: ('0'..'9')+;
 NUM_REAL	: ('0'..'9')+ ('.' ('0'..'9')+)?;
@@ -59,7 +59,7 @@ CONST : 'constante';
 VERDADEIRO : 'verdadeiro';
 FALSO : 'falso';
 SIMB_N_IDENT : '}' | '$' | '~';
-CADEIA_N_FECHADA : '"' (~["\n])* '"';
+CADEIA_N_FECHADA : '"' ~('\n'|'"')* '\n';
 COMENTARIO_N_FECHADO : '{' ~'}'*;
 
 IDENT : ('a'..'z'|'A'..'Z') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
@@ -78,6 +78,8 @@ ABRECOL :   '[';
 FECHACOL:   ']';
 ABREPAR :	'(';
 FECHAPAR:	')';
+
+ERRO : .;
 
 programa : declaracoes ALGORITMO corpo FIM_ALGORITMO EOF;
 declaracoes : (decl_local_global)*;

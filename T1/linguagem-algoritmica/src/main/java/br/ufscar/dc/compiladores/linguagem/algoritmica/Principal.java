@@ -32,6 +32,14 @@ public class Principal {
                     pw.println("Linha " + t.getLine() + ": comentario nao fechado");
                     break;
                 }
+                else if(palavra.equals("CADEIA_NAO_FECHADA")){ //caso a cadeia não seja fechada, printar linha do erro
+                    pw.println("Linha " + t.getLine() + ": cadeia literal nao fechada");
+                    break;
+                }
+                else if(palavra.equals("ERRO")){ //caso encontre um simbolo que nao esteja nas regras, printar linha do erro
+                    pw.println("Linha " + t.getLine() + ": " + t.getText() + " - simbolo nao identificado");
+                    break;
+                }
                 else { //printa o conteúdo e o tipo do Token 
                     pw.println("<'" + t.getText() + "'," + LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType()) + ">");
                 }
