@@ -32,14 +32,19 @@ public class MeuErrorListener implements ANTLRErrorListener {
 
         Token t = (Token) offendingSymbol;
 
+        //Erro específico do EOF
         if (t.getText().equals("<EOF>")) {
             pw.println("Linha "+ line +": erro sintatico proximo a EOF\nFim da compilacao");
             pw.close();
         }
+        
+        //If para símbolos nao identificados
         else if (LinguagemAlgoritmicaLexer.VOCABULARY.getDisplayName(t.getType()).equals("ERRO")) {
             pw.println("Linha "+ line +": " + t.getText() + " - simbolo nao identificado\nFim da compilacao");
             pw.close();
         }
+
+        //Saída de erro geral
         else {
             pw.println("Linha "+ line +": erro sintatico proximo a "+t.getText()+"\nFim da compilacao");
             pw.close();

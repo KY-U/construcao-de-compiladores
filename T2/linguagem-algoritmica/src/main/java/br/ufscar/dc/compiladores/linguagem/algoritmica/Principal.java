@@ -14,10 +14,16 @@ public class Principal {
         try(PrintWriter pw = new PrintWriter(arquivoSaida)) {
             // args[0] é o primeiro argumento da linha de comando
             CharStream cs = CharStreams.fromFileName(args[0]);
+            //Linguagem Lexer
             LinguagemAlgoritmicaLexer lexer = new LinguagemAlgoritmicaLexer(cs);
+
+            //Token
             CommonTokenStream tokens = new CommonTokenStream(lexer);
+
+            //Linguagem Parser
             LinguagemAlgoritmicaParser parser = new LinguagemAlgoritmicaParser(tokens);
             
+            //Chama classe ErrorListener com argumento do PrintWritter
             MeuErrorListener mcel = new MeuErrorListener(pw);
             parser.addErrorListener(mcel);
             
