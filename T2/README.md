@@ -81,7 +81,7 @@ mvn package
 ```
 ### Executar:
 ```
-java -jar <path-até-repositório>/T2/linguagem-algoritmica/target/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar <path-até-linguagem-algoritmica>/entrada.txt <path-até-linguagem-algoritmica>/saida.txt
+java -jar <path-até-repositório>/linguagem-algoritmica-1.0-SNAPSHOT-jar-with-dependencies.jar <path-até-linguagem-algoritmica>/entrada.txt <path-até-linguagem-algoritmica>/saida.txt
 ```
 ### Executar com casos de teste:
 Verificar Java 11.0.2 com:
