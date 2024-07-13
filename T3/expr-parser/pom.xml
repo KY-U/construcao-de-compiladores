@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>br.ufscar.dc.compiladores</groupId>
-  <artifactId>linguagem-algoritmica</artifactId>
+  <artifactId>expr-parser</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>linguagem-algoritmica</name>
+  <name>expr-parser</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
