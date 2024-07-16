@@ -7,11 +7,12 @@ public class TabelaDeSimbolos {
     public enum TipoAlguma {
         INTEIRO,
         REAL,
-        //INVALIDO,
+        INVALIDO,
         //CADEIA,
         //IDENT,
         LITERAL,
         LOGICO
+        //REGISTRO?
     }
     
     class EntradaTabelaDeSimbolos {
