@@ -12,7 +12,7 @@ public class Principal {
         LinguagemAlgoritmicaLexer lexer = new LinguagemAlgoritmicaLexer(cs);
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         LinguagemAlgoritmicaParser parser = new LinguagemAlgoritmicaParser(tokens);
-        ProgramaContext arvore = parser.programa();
+        LinguagemAlgoritmicaParser.ProgramaContext arvore = parser.programa();
         LinguagemAlgoritmicaSemantico as = new LinguagemAlgoritmicaSemantico();
         as.visitPrograma(arvore);
         LinguagemAlgoritmicaSemanticoUtils.errosSemanticos.forEach((s) -> System.out.println(s));

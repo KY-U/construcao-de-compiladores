@@ -3,7 +3,17 @@ package br.ufscar.dc.compiladores.expr.parser;
 import br.ufscar.dc.compiladores.expr.parser.TabelaDeSimbolos;
 import br.ufscar.dc.compiladores.expr.parser.TabelaDeSimbolos.TipoAlguma;
 
-public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisitor<Void>{
+import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.Declaracao_globalContext;
+//import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.Declaracao_constanteContext;
+//import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.Declaracao_tipoContext;
+//import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.Declaracao_variavelContext;
+import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.ProgramaContext;
+import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.IdentificadorContext;
+import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.CmdAtribuicaoContext;
+import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser.Tipo_basico_identContext;
+
+
+public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisitor{
 
     TabelaDeSimbolos tabela;
 
@@ -16,7 +26,7 @@ public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisit
 
     //obtém o nome e o tipo da variável, verifica se a variável já foi declarada, e se não, a adiciona à tabela de símbolos
     @Override
-    public Void visitDeclaracao(LinguagemAlgoritmica.DeclaracaoContext ctx) {
+    public Void visitDeclaracao(LinguagemAlgoritmicaParser.DeclaracoesContext ctx) {
         String nomeVar = ctx.VARIAVEL().getText();
         String strTipoVar = ctx.TIPO_VAR().getText();
         TipoAlguma tipoVar = TipoAlguma.INVALIDO;
@@ -50,7 +60,7 @@ public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisit
     }
 
     @Override
-    public Void visitComandoAtribuicao(LinguagemAlgoritmicaParser.ComandoAtribuicaoContext ctx) {
+    public Void visitComandoAtribuicao(LinguagemAlgoritmicaParser.CmdAtribuicaoContext ctx) {
         TipoAlguma tipoExpressao = LinguagemAlgoritmicaSemanticoUtils.verificarTipo(tabela, ctx.expressaoAritmetica());
         if (tipoExpressao != TipoAlguma.INVALIDO) {
             String nomeVar = ctx.VARIAVEL().getText();
@@ -67,7 +77,7 @@ public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisit
     }
 
     @Override
-    public Void visitComandoEntrada(LinguagemAlgoritmicaParser.ComandoEntradaContext ctx) {
+    public Void visitComandoEntrada(LinguagemAlgoritmicaParser.CmdEscrevaContext ctx) {
         String nomeVar = ctx.VARIAVEL().getText();
         if (!tabela.existe(nomeVar)) {
             LinguagemAlgoritmicaSemanticoUtils.adicionarErroSemantico(ctx.VARIAVEL().getSymbol(), "Variável " + nomeVar + " não foi declarada antes do uso");
@@ -76,7 +86,7 @@ public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisit
     }
 
     @Override
-    public Void visitExpressaoAritmetica(LinguagemAlgoritmicaParser.ExpressaoAritmeticaContext ctx) {
+    public Void visitExpressaoAritmetica(LinguagemAlgoritmicaParser.Exp_aritmeticaContext ctx) {
         LinguagemAlgoritmicaSemanticoUtils.verificarTipo(tabela, ctx);
         return super.visitExpressaoAritmetica(ctx);
     }

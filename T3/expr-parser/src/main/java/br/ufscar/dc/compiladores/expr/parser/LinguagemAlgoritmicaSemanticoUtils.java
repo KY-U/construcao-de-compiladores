@@ -3,6 +3,7 @@ package br.ufscar.dc.compiladores.expr.parser;
 import java.util.ArrayList;
 import java.util.List;
 import org.antlr.v4.runtime.Token;
+import br.ufscar.dc.compiladores.expr.parser.LinguagemAlgoritmicaParser;
 
 public class LinguagemAlgoritmicaSemanticoUtils {
     public static List<String> errosSemanticos = new ArrayList<>();
@@ -13,9 +14,9 @@ public class LinguagemAlgoritmicaSemanticoUtils {
         errosSemanticos.add(String.format("Erro %d:%d - %s", linha, coluna, mensagem));
     }
     
-    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.ExpressaoAritmeticaContext ctx) {
+    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.Exp_aritmeticaContext ctx) {
         TabelaDeSimbolos.TipoAlguma ret = null;
-        for (var ta : ctx.termoAritmetico()) {
+        for (var ta : ctx.termo()) {
             TabelaDeSimbolos.TipoAlguma aux = verificarTipo(tabela, ta);
             if (ret == null) {
                 ret = aux;
@@ -28,7 +29,7 @@ public class LinguagemAlgoritmicaSemanticoUtils {
         return ret;
     }
 
-    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.TermoAritmeticoContext ctx) {
+    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.TermoContext ctx) {
         TabelaDeSimbolos.TipoAlguma ret = null;
 
         for (var fa : ctx.fatorAritmetico()) {
@@ -43,7 +44,7 @@ public class LinguagemAlgoritmicaSemanticoUtils {
         return ret;
     }
 
-    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.FatorAritmeticoContext ctx) {
+    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.FatorContext ctx) {
         if (ctx.NUMINT() != null) {
             return TabelaDeSimbolos.TipoAlguma.INTEIRO;
         }

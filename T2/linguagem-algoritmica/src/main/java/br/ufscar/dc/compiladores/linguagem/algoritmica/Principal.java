@@ -22,7 +22,10 @@ public class Principal {
 
             //Linguagem Parser
             LinguagemAlgoritmicaParser parser = new LinguagemAlgoritmicaParser(tokens);
-            
+            LinguagemAlgoritmicaParser.ProgramaContext arvore = parser.programa();
+            LinguagemAlgoritmicaSemantico LAS = new LinguagemAlgoritmicaSemantico();
+
+            LAS.visitPrograma(arvore);
             //Chama classe ErrorListener com argumento do PrintWritter
             MeuErrorListener mcel = new MeuErrorListener(pw);
             parser.addErrorListener(mcel);
