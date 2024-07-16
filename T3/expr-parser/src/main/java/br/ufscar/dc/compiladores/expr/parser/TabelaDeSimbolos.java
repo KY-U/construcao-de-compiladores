@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TabelaDeSimbolos {
-    public enum TipoAlguma {
+    public enum TipoToken {
         INTEIRO,
         REAL,
         INVALIDO,
@@ -12,14 +12,16 @@ public class TabelaDeSimbolos {
         //IDENT,
         LITERAL,
         LOGICO
-        //REGISTRO?
+        //REGISTRO
+        //FUNCAO
+        //PROCEDIMENTO
     }
     
     class EntradaTabelaDeSimbolos {
         String nome;
-        TipoAlguma tipo;
+        TipoToken tipo;
 
-        private EntradaTabelaDeSimbolos(String nome, TipoAlguma tipo) {
+        private EntradaTabelaDeSimbolos(String nome, TipoToken tipo) {
             this.nome = nome;
             this.tipo = tipo;
         }
@@ -31,7 +33,7 @@ public class TabelaDeSimbolos {
         this.tabela = new HashMap<>();
     }
     
-    public void adicionar(String nome, TipoAlguma tipo) {
+    public void adicionar(String nome, TipoToken tipo) {
         tabela.put(nome, new EntradaTabelaDeSimbolos(nome, tipo));
     }
     
@@ -39,7 +41,7 @@ public class TabelaDeSimbolos {
         return tabela.containsKey(nome);
     }
     
-    public TipoAlguma verificar(String nome) {
+    public TipoAlguma getTipo(String nome) {
         return tabela.get(nome).tipo;
     }
 }

@@ -1,6 +1,5 @@
 package br.ufscar.dc.compiladores.expr.parser;
 
-import java.util.List;
 import java.util.LinkedList;
 
 public class Escopo {
