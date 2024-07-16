@@ -1,4 +1,4 @@
-package br.ufscar.dc.compiladores.alguma.lexico;
+package br.ufscar.dc.compiladores.expr.parser;
 
 import static org.junit.Assert.assertTrue;
 
