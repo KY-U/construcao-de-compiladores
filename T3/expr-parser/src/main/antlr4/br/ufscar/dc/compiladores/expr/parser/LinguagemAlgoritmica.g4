@@ -1,4 +1,4 @@
-grammar Expressoes;
+grammar LinguagemAlgoritmica;
 
 COMENTARIO : '{' ~('\n'|'\r')* '}' {skip();};
 REAL: 'real';

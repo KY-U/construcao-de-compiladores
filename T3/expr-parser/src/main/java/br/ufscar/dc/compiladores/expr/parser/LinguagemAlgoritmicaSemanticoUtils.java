@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.antlr.v4.runtime.Token;
 
-public class ExpressoesSemanticoUtils {
+public class LinguagemAlgoritmicaSemanticoUtils {
     public static List<String> errosSemanticos = new ArrayList<>();
     
     public static void adicionarErroSemantico(Token t, String mensagem) {
@@ -13,7 +13,7 @@ public class ExpressoesSemanticoUtils {
         errosSemanticos.add(String.format("Erro %d:%d - %s", linha, coluna, mensagem));
     }
     
-    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, ExpressoesParser.ExpressaoAritmeticaContext ctx) {
+    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.ExpressaoAritmeticaContext ctx) {
         TabelaDeSimbolos.TipoAlguma ret = null;
         for (var ta : ctx.termoAritmetico()) {
             TabelaDeSimbolos.TipoAlguma aux = verificarTipo(tabela, ta);
@@ -28,7 +28,7 @@ public class ExpressoesSemanticoUtils {
         return ret;
     }
 
-    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, ExpressoesParser.TermoAritmeticoContext ctx) {
+    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.TermoAritmeticoContext ctx) {
         TabelaDeSimbolos.TipoAlguma ret = null;
 
         for (var fa : ctx.fatorAritmetico()) {
@@ -43,7 +43,7 @@ public class ExpressoesSemanticoUtils {
         return ret;
     }
 
-    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, ExpressoesParser.FatorAritmeticoContext ctx) {
+    public static TabelaDeSimbolos.TipoAlguma verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.FatorAritmeticoContext ctx) {
         if (ctx.NUMINT() != null) {
             return TabelaDeSimbolos.TipoAlguma.INTEIRO;
         }
