@@ -9,8 +9,9 @@ public class TabelaDeSimbolos {
         REAL,
         INVALIDO,
         CADEIA,
-        IDENT
-        //Quais outros tipos?
+        IDENT,
+        LITERAL,
+        LOGICO
     }
     
     class EntradaTabelaDeSimbolos {
