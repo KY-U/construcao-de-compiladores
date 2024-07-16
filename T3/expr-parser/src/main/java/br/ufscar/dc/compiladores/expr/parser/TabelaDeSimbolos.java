@@ -7,9 +7,9 @@ public class TabelaDeSimbolos {
     public enum TipoAlguma {
         INTEIRO,
         REAL,
-        INVALIDO,
-        CADEIA,
-        IDENT,
+        //INVALIDO,
+        //CADEIA,
+        //IDENT,
         LITERAL,
         LOGICO
     }
