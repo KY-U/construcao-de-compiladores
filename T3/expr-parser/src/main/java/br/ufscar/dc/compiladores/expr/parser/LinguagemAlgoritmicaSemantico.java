@@ -1,7 +1,6 @@
 package br.ufscar.dc.compiladores.expr.parser;
 
 import br.ufscar.dc.compiladores.expr.parser.TabelaDeSimbolos;
-import br.ufscar.dc.compiladores.expr.parser.TabelaDeSimbolos.TipoAlguma;
 
 public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisitor<Void>{
 

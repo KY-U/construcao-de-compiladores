@@ -41,7 +41,7 @@ public class TabelaDeSimbolos {
         return tabela.containsKey(nome);
     }
     
-    public TipoAlguma getTipo(String nome) {
+    public TipoToken getTipo(String nome) {
         return tabela.get(nome).tipo;
     }
 }
