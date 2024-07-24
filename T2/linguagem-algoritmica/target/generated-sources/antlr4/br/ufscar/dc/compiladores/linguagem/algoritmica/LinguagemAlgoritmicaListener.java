@@ -58,6 +58,36 @@ public interface LinguagemAlgoritmicaListener extends ParseTreeListener {
 	 */
 	void exitVariavel(LinguagemAlgoritmicaParser.VariavelContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link LinguagemAlgoritmicaParser#decConst}.
+	 * @param ctx the parse tree
+	 */
+	void enterDecConst(LinguagemAlgoritmicaParser.DecConstContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link LinguagemAlgoritmicaParser#decConst}.
+	 * @param ctx the parse tree
+	 */
+	void exitDecConst(LinguagemAlgoritmicaParser.DecConstContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link LinguagemAlgoritmicaParser#decTipo}.
+	 * @param ctx the parse tree
+	 */
+	void enterDecTipo(LinguagemAlgoritmicaParser.DecTipoContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link LinguagemAlgoritmicaParser#decTipo}.
+	 * @param ctx the parse tree
+	 */
+	void exitDecTipo(LinguagemAlgoritmicaParser.DecTipoContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link LinguagemAlgoritmicaParser#decVar}.
+	 * @param ctx the parse tree
+	 */
+	void enterDecVar(LinguagemAlgoritmicaParser.DecVarContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link LinguagemAlgoritmicaParser#decVar}.
+	 * @param ctx the parse tree
+	 */
+	void exitDecVar(LinguagemAlgoritmicaParser.DecVarContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link LinguagemAlgoritmicaParser#identificador}.
 	 * @param ctx the parse tree
 	 */

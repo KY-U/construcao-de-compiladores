@@ -41,6 +41,24 @@ public interface LinguagemAlgoritmicaVisitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitVariavel(LinguagemAlgoritmicaParser.VariavelContext ctx);
 	/**
+	 * Visit a parse tree produced by {@link LinguagemAlgoritmicaParser#decConst}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDecConst(LinguagemAlgoritmicaParser.DecConstContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link LinguagemAlgoritmicaParser#decTipo}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDecTipo(LinguagemAlgoritmicaParser.DecTipoContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link LinguagemAlgoritmicaParser#decVar}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDecVar(LinguagemAlgoritmicaParser.DecVarContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link LinguagemAlgoritmicaParser#identificador}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

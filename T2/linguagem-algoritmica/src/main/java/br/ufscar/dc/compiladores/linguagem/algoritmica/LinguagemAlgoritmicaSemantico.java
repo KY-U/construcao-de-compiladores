@@ -8,36 +8,15 @@ public class LinguagemAlgoritmicaSemantico extends LinguagemAlgoritmicaBaseVisit
     Escopos escopos = new Escopos();
 
     @Override
-    public Void visitPrograma(LinguagemAlgoritmicaParser.ProgramaContext ctx) {
-        return super.visitPrograma(ctx);
-    }
-
-    //verifica se a constante foi declarada anteriormente (ela não pode ser alterada por se tratar de uma constante)
-    @Override
-    public Object visitDeclaracao_local(Declaracao_localContext ctx) {
-        TabelaDeSimbolos escopoAtual = escopos.obterEscopoAtual();
-        if (escopoAtual.existe(ctx.IDENT().getText()) && ) {
-            AlgumaSemanticoUtils.adicionarErroSemantico(ctx.start, "constante" + ctx.IDENT().getText()
-                    + " ja declarado anteriormente");
+    public Object visitDeclaracao_tipo(decTipoContext decT){
+        TabelaDeSimbolos escopo = escopos.obterEscopoAtual();
+        String identificador = decT.IDENT().getText();
+        if (escopo.existe(identificador)){
+            LinguagemAlgoritmicaSemanticoUtils.adicionarErroSemantico(decT.start, identificador + identificador + " já declarado");
         } else {
-            TabelaDeSimbolos.TipoAlguma tipo = TabelaDeSimbolos.TipoAlguma.INTEIRO;
-            switch(ctx.tipo_basico().getText()) {
-               case "literal":
-                        tipo = TabelaDeSimbolos.TipoAlguma.CADEIA;
-                        break;
-               case "inteiro":
-                        tipo = TabelaDeSimbolos.TipoAlguma.INTEIRO;
-                        break;
-               case "real":
-                        tipo = TabelaDeSimbolos.TipoAlguma.REAL;
-                        break;
-               case "logico":
-                        tipo = TabelaDeSimbolos.TipoAlguma.LOGICO;
-                        break;
-            }
-            escopoAtual.adicionar(ctx.IDENT().getText(), tipo);
-        }
+            escopo.adicionar(identificador, TabelaDeSimbolos.TipoLinguagemAlgoritmica.TIPO);
 
-        return super.visitDeclaracao_constante(ctx);
+        }
     }
+
 }

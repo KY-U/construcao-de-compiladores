@@ -77,6 +77,42 @@ public class LinguagemAlgoritmicaBaseListener implements LinguagemAlgoritmicaLis
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterDecConst(LinguagemAlgoritmicaParser.DecConstContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDecConst(LinguagemAlgoritmicaParser.DecConstContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDecTipo(LinguagemAlgoritmicaParser.DecTipoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDecTipo(LinguagemAlgoritmicaParser.DecTipoContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDecVar(LinguagemAlgoritmicaParser.DecVarContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDecVar(LinguagemAlgoritmicaParser.DecVarContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterIdentificador(LinguagemAlgoritmicaParser.IdentificadorContext ctx) { }
 	/**
 	 * {@inheritDoc}

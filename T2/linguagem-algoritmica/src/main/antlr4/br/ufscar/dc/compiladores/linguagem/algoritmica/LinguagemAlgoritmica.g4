@@ -91,6 +91,9 @@ declaracao_local : DECLARE variavel
                  ;
 
 variavel : identificador (VIRGULA identificador)* DELIM tipo;
+decConst: CONST IDENT DELIM tipo_basico IGUAL valor_constante;
+decTipo: 'tipo' IDENT DELIM tipo;
+decVar: DECLARE variavel;
 identificador : IDENT (PONTO IDENT)* dimensao;
 dimensao : (ABRECOL exp_aritmetica FECHACOL)*;
 tipo : registro | tipo_estendido;
