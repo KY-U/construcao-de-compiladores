@@ -17,7 +17,6 @@ br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$Decl_
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$TermoContext.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$VariavelContext.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$ParametroContext.class
-br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaVisitor.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\TabelaDeSimbolos$TipoLinguagemAlgoritmica.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$CmdSeContext.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$CmdChamadaContext.class
@@ -56,7 +55,6 @@ br\ufscar\dc\compiladores\linguagem\algoritmica\TabelaDeSimbolos$EntradaTabelaDe
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$Fator_logicoContext.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$ParametrosContext.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$Parcela_logicaContext.class
-br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaBaseVisitor.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$CorpoContext.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$TipoContext.class
 br\ufscar\dc\compiladores\linguagem\algoritmica\LinguagemAlgoritmicaParser$Declaracao_globalContext.class

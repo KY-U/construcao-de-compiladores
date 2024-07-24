@@ -26,6 +26,10 @@ public class Principal {
             LinguagemAlgoritmicaSemantico LAS = new LinguagemAlgoritmicaSemantico();
 
             LAS.visitPrograma(arvore);
+            for(String erro: LinguagemAlgoritmicaSemanticoUtils.errosSemanticos){
+                pw.println(erro);
+            }
+            pw.close();
             //Chama classe ErrorListener com argumento do PrintWritter
             MeuErrorListener mcel = new MeuErrorListener(pw);
             parser.addErrorListener(mcel);
