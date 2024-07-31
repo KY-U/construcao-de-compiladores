@@ -65,7 +65,7 @@ Java Framework:
 
     Junit
         Versão: 4.11.1
-Parser generator for reading, processing, executing, or translating structured text or binary files:
+Gerador de parser para ler, processar, executar ou traduzir textos ou arquivos binários estruturados:
 
     ANTLR(antlr4) 
         Versão4.11.1
