@@ -1,6 +1,5 @@
 package br.ufscar.dc.compiladores.t4;
 
-// Importações básicas para o funcionamento do programa.
 import br.ufscar.dc.compiladores.t4.LinguagemAlgoritmicaParser.ProgramaContext;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,16 +15,16 @@ public class T4 {
         try (PrintWriter pw = new PrintWriter(new FileWriter(args[1]))) {
             try {
                 CharStream cs = CharStreams.fromFileName(args[0]);
-                
+                //analisador lexico
                 LinguagemAlgoritmicaLexer lexer = new LinguagemAlgoritmicaLexer(cs);
                 CommonTokenStream tokens = new CommonTokenStream(lexer);
-
+                //parser
                 LinguagemAlgoritmicaParser parser = new LinguagemAlgoritmicaParser(tokens);
                 ProgramaContext arvore = parser.programa();
                 LASemantico t4s = new LASemantico();
-                
+                //inicializaçao
                 t4s.visitPrograma(arvore);
-                
+                //verificação de erros
                 LASemanticoUtils.errosSemanticos.forEach((s) -> pw.println(s));
                 pw.println("Fim da compilacao");
                 pw.close();                
