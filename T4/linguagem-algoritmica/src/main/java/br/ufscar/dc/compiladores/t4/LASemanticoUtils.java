@@ -9,16 +9,16 @@ import java.util.HashMap;
 import org.antlr.v4.runtime.Token;
 
 public class LASemanticoUtils {
-
+    // lista de erros
     public static List<String> errosSemanticos = new ArrayList<>();
-
+    // adiciona erro à lista
     public static void adicionaErroSemantico(Token tok, String mensagem) {
         int linha = tok.getLine();
-        
+        //verifica erro duplicado
         if (!errosSemanticos.contains("Linha " + linha + ": " + mensagem)) 
             errosSemanticos.add(String.format("Linha %d: %s", linha, mensagem));
     }
-    
+    // checa compatibilidade entre operadores
     public static boolean verificaCompatibilidade(TipoT4 T1, TipoT4 T2) {
         boolean flag = false;
         
@@ -31,7 +31,7 @@ public class LASemanticoUtils {
         
         return flag;
     }
-    
+    // checa compatilibilidade entre operadores como operção lógica
     public static boolean verificaCompatibilidadeLogica(TipoT4 T1, TipoT4 T2) {
         boolean flag = false;
         
@@ -42,7 +42,7 @@ public class LASemanticoUtils {
 
         return flag;
     }
-    
+    // limpa o nome de um identificador
     public static String reduzNome(String nome, String simbolo) {
         
         if (nome.contains(simbolo)) {
@@ -66,7 +66,7 @@ public class LASemanticoUtils {
         return nome;
         
     }   
-    
+    // retorna o tipo do literal
     public static TipoT4 confereTipo (HashMap<String, ArrayList<String>> tabela, String tipoRetorno) {
         TipoT4 tipoAux;
         
@@ -90,7 +90,7 @@ public class LASemanticoUtils {
         
         return tipoAux;
     }
-                    
+    // métodos de verificação de tipo                
     public static TipoT4 verificarTipo(TabelaDeSimbolos tabela, LinguagemAlgoritmicaParser.Exp_aritmeticaContext ctx) {
         TipoT4 tipoRetorno = verificarTipo(tabela, ctx.termo().get(0));
                 
