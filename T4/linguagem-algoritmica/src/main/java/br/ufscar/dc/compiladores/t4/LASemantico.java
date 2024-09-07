@@ -12,12 +12,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 
+//Implementação base dos visitors
 public class LASemantico extends LinguagemAlgoritmicaBaseVisitor<Void> {
 
-
+    //tabela de escopos
     TabelaDeSimbolos tabela;
 
-
+    //escopos da análise
     static Escopos escoposAninhados = new Escopos();
     
 
@@ -26,7 +27,7 @@ public class LASemantico extends LinguagemAlgoritmicaBaseVisitor<Void> {
 
     HashMap<String, ArrayList<String>> tabelaRegistro = new HashMap<>();
 
-
+    //adiciona o símbolo alvo à tabela
     public void adicionaSimboloTabela(String nome, String tipo, Token nomeT, Token tipoT, TipoEntrada tipoE) {
 
         TabelaDeSimbolos tabelaLocal = escoposAninhados.obterEscopoAtual();
@@ -36,7 +37,7 @@ public class LASemantico extends LinguagemAlgoritmicaBaseVisitor<Void> {
 
         if (tipo.charAt(0) == '^')
             tipo = tipo.substring(1);
-        
+        //tipos de síbolos
         switch (tipo) {
             case "literal":
                 tipoItem = TipoT4.LITERAL;
@@ -61,17 +62,18 @@ public class LASemantico extends LinguagemAlgoritmicaBaseVisitor<Void> {
                 break;
         }
         
-
+        //tipo não existente, retorna erro de não dclarado
         if (tipoItem == TipoT4.INVALIDO)
             adicionaErroSemantico(tipoT, "tipo " + tipo + " nao declarado");
         
-
+        //tipo já existente, retorna erro de declarado anteriormente
         if (!tabelaLocal.existe(nome))
             tabelaLocal.adicionar(nome, tipoItem, tipoE);
         else
             adicionaErroSemantico(nomeT, "identificador " + nome + " ja declarado anteriormente");
     }
-
+    //overrides visitors
+    
     @Override
     public Void visitPrograma(LinguagemAlgoritmicaParser.ProgramaContext ctx) {
 
