@@ -7,7 +7,7 @@ Caio Ueda Sampaio, RA: 802215
 
 Pedro Lealdini, RA: 790894
 
-**Vídeo:**https://youtu.be/VM7kl3XPQ04
+(**Vídeo:**)[https://youtu.be/VM7kl3XPQ04]
 
 ### Descrição:
 A linguagem tem como objetivo auxiliar na cotação de produtos destinados a um churrasco, com a ideia de selecionar os produtos mais baratos ou mais caros de uma gama de mercados:
