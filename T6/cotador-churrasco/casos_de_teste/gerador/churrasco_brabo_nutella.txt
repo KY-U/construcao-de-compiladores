@@ -9,15 +9,15 @@ MERCADOS
 	MEDIDA: 0,3 KG
 	PREÇO: 4,82
 
-	ITEM: Linguiça
+	ITEM: Linguica
 	MEDIDA: 1 KG
 	PREÇO: 16,80
 
-	ITEM: Limão
+	ITEM: Limao
 	MEDIDA: 1 KG
 	PREÇO: 3,80
     
-    ITEM: Cachaça
+    ITEM: Cachaca
 	MEDIDA: 1 L
 	PREÇO: 1,80
 
@@ -35,15 +35,15 @@ MERCADOS
 	MEDIDA: 0,3 KG
 	PREÇO: 7,82
 
-	ITEM: Linguiça
+	ITEM: Linguica
 	MEDIDA: 1 KG
 	PREÇO: 18,80
 
-	ITEM: Limão
+	ITEM: Limao
 	MEDIDA: 1 KG
 	PREÇO: 1,80
     
-    ITEM: Cachaça
+    ITEM: Cachaca
 	MEDIDA: 1 L
 	PREÇO: 5,80
 
@@ -51,7 +51,7 @@ MERCADOS
 	MEDIDA: 2 UN
 	PREÇO: 5,0
 
-	NOME: Mercadinho do Zé
+	NOME: Mercadinho do Ze
 
 	ITEM: Tomate
 	MEDIDA: 1 KG
@@ -61,15 +61,15 @@ MERCADOS
 	MEDIDA: 0,3 KG
 	PREÇO: 1,82
 
-	ITEM: Linguiça
+	ITEM: Linguica
 	MEDIDA: 1 KG
 	PREÇO: 12,80
 
-	ITEM: Limão
+	ITEM: Limao
 	MEDIDA: 1 KG
 	PREÇO: 4,80
     
-    ITEM: Cachaça
+    ITEM: Cachaca
 	MEDIDA: 1 L
 	PREÇO: 0,80
 
@@ -79,24 +79,24 @@ MERCADOS
 
 LISTA
 	NOME: Churrasco Brabo
-	PROPRIEDADE: Raiz
+	PROPRIEDADE: Nutella
 
 	ITEM: Tomate
-	MEDIDA: 0,8 KG
+	QUANTIDADE: 0,8 KG
 
 	ITEM: Farofa
-	MEDIDA: 0,2 KG
+	QUANTIDADE: 0,2 KG
 
-	ITEM: Linguiça
-	MEDIDA: 1 KG
+	ITEM: Linguica
+	QUANTIDADE: 1 KG
 
-	ITEM: Limão
-	MEDIDA: 0,5 KG
+	ITEM: Limao
+	QUANTIDADE: 0,5 KG
     
-    ITEM: Cachaça
-	MEDIDA: 0,5 L
+    ITEM: Cachaca
+	QUANTIDADE: 0,5 L
 
 	ITEM: Pao de Alho
-	MEDIDA: 1 UN
+	QUANTIDADE: 1 UN
 
-FIM
+PARTIU
