@@ -1,0 +1,102 @@
+MERCADOS
+	NOME: Barraca da Feira Braba
+
+	ITEM: Tomate
+	MEDIDA: 1 KG
+	PREÇO: 5,20
+
+	ITEM: Farofa
+	MEDIDA: 0,3 KG
+	PREÇO: 4,82
+
+	ITEM: Linguiça
+	MEDIDA: 1 KG
+	PREÇO: 16,80
+
+	ITEM: Limão
+	MEDIDA: 1 KG
+	PREÇO: 3,80
+    
+    ITEM: Cachaça
+	MEDIDA: 1 L
+	PREÇO: 1,80
+
+	ITEM: Pao de Alho
+	MEDIDA: 2 UN
+	PREÇO: 3,0
+	
+	NOME: Supermercado Big Bom
+
+	ITEM: Tomate
+	MEDIDA: 1 KG
+	PREÇO: 4
+
+	ITEM: Farofa
+	MEDIDA: 0,3 KG
+	PREÇO: 7,82
+
+	ITEM: Linguiça
+	MEDIDA: 1 KG
+	PREÇO: 18,80
+
+	ITEM: Limão
+	MEDIDA: 1 KG
+	PREÇO: 1,80
+    
+    ITEM: Cachaça
+	MEDIDA: 1 L
+	PREÇO: 5,80
+
+	ITEM: Pao de Alho
+	MEDIDA: 2 UN
+	PREÇO: 5,0
+
+	NOME: Mercadinho do Zé
+
+	ITEM: Tomate
+	MEDIDA: 1 KG
+	PREÇO: 54,20
+
+	ITEM: Farofa
+	MEDIDA: 0,3 KG
+	PREÇO: 1,82
+
+	ITEM: Linguiça
+	MEDIDA: 1 KG
+	PREÇO: 12,80
+
+	ITEM: Limão
+	MEDIDA: 1 KG
+	PREÇO: 4,80
+    
+    ITEM: Cachaça
+	MEDIDA: 1 L
+	PREÇO: 0,80
+
+	ITEM: Pao de Alho
+	MEDIDA: 2 UN
+	PREÇO: 15,0
+
+LISTA
+	NOME: Churrasco Brabo
+	PROPRIEDADE: Raiz
+
+	ITEM: Tomate
+	MEDIDA: 0,8 KG
+
+	ITEM: Farofa
+	MEDIDA: 0,2 KG
+
+	ITEM: Linguiça
+	MEDIDA: 1 KG
+
+	ITEM: Limão
+	MEDIDA: 0,5 KG
+    
+    ITEM: Cachaça
+	MEDIDA: 0,5 L
+
+	ITEM: Pao de Alho
+	MEDIDA: 1 UN
+
+FIM

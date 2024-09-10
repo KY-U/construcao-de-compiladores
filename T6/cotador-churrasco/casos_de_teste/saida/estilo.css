@@ -1,0 +1,61 @@
+body {
+    background-color: #3cee1c;
+}
+
+.card {
+    width: 300px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.card-header {
+    background-color: #ebf709;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    background-color: white;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    word-wrap: break-word;  /* Força quebra de linha dentro das células */
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: Trebuchet MS, Geneva, Tahoma, sans-serif;
+    padding: 20px 20px 10px 20px;
+}
+
+table, th, td {
+    box-sizing: border-box;
+}

@@ -1,0 +1,54 @@
+
+MERCADOS
+	NOME: Jau Serv
+
+	ITEM: Pao
+	MEDIDA: 10 KG 
+	PREÇO: 30
+
+	ITEM: Frango
+	MEDIDA: 1 KG 
+	PREÇO: 5
+
+	ITEM: Picanha
+	MEDIDA: 1 KG
+	PREÇO: 60
+
+	ITEM: Cerveja
+	MEDIDA: 0,5 L
+	PREÇO: 5
+	
+	NOME: Mercadinho da Esquina
+
+	ITEM: Pao
+	MEDIDA: 1 KG 
+	PREÇO: 32
+
+	ITEM: Frango
+	MEDIDA: 0,1 KG 
+	PREÇO: 7,90
+
+	ITEM: Picanha
+	MEDIDA: 1 KG
+	PREÇO: 45
+
+	ITEM: Cerveja
+	MEDIDA: 0,5 L
+	PREÇO: 5
+
+LISTA
+	NOME: Churrasco da galera
+	PROPRIEDADE: Nutella
+
+	ITEM: Pao
+	QUANTIDADE: 0,5 KG
+
+	ITEM: Picanha
+	QUANTIDADE: 1 KG
+
+	ITEM: Frango
+	QUANTIDADE: 2 KG
+
+	ITEM: Cerveja
+	QUANTIDADE: 0,5 L
+PARTIU

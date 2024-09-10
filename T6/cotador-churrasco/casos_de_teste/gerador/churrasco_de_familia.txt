@@ -1,0 +1,42 @@
+
+MERCADOS
+	NOME: Savegnago
+	ITEM: Panceta
+	MEDIDA: 0,5 KG 
+	PREÇO: 30
+
+	ITEM: Coca Cola
+	MEDIDA: 2 L 
+	PREÇO: 8,70
+
+	ITEM: Cerveja 
+	MEDIDA: 1 L
+	PREÇO: 8
+	
+	NOME: Carrefour
+	ITEM: Panceta 
+	MEDIDA: 1 KG
+	PREÇO: 25
+
+	ITEM: Coca Cola 
+	MEDIDA: 1 L 
+	PREÇO: 8
+
+	ITEM: Cerveja
+	MEDIDA: 1 L
+	PREÇO: 7,8
+
+LISTA
+	NOME: Churrasco da Familia
+	PROPRIEDADE: Raiz
+
+	ITEM: Panceta 
+	QUANTIDADE: 15 KG
+
+	ITEM: Coca Cola 
+	QUANTIDADE: 5 L
+
+	ITEM: Cerveja
+	QUANTIDADE: 10 L
+PARTIU
+	
