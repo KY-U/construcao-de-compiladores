@@ -27,7 +27,15 @@ O programa gera um arquivo:
   - **Total**: Valor Total da Compra na Loja;
 - **Valor Total**: Valor Total da Lista de Compras.
 
+### Regras Semânticas:
+Mercado:
+- Verifica se o mercado já foi declarado
 
+
+Lista de ingredientes:
+- Verifica se o item já foi declarado
+- Verifica se o item existe em algum mercado
+- Verifica se a unidade é compatível com o item do mercado
 
 ### Para Rodar:
 ```
